@@ -1,0 +1,173 @@
+/* MOVE DANSE TRAIN - homepage styles
+   Colours and fonts are set once here; change them in :root to restyle the whole site. */
+:root {
+  --ink: #1C1320;
+  --body: #4A3F50;
+  --muted: #5B4F61;
+  --pink: #C2185B;
+  --pink-dark: #9E1349;
+  --pink-tint: #FDEEF4;
+  --pink-tint-text: #5E1A3A;
+  --plum: #2A1230;
+  --plum-soft: #E9DDEE;
+  --plum-accent: #FF9CC2;
+  --amber: #FFE3A8;
+  --amber-text: #4A3000;
+  --line: #EADFE6;
+  --wash: #FBF6F8;
+  --white: #FFFFFF;
+  --display: "Bricolage Grotesque", system-ui, sans-serif;
+  --text: "DM Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 16px; }
+body { margin: 0; font-family: var(--text); font-size: 17px; line-height: 1.55; color: var(--ink); background: var(--white); }
+img { max-width: 100%; display: block; }
+h1, h2, h3, p { margin: 0; }
+h1, h2, .card-title, .day-name, .studio-name { font-family: var(--display); }
+h1 { font-weight: 800; font-size: clamp(38px, 5vw, 60px); line-height: 1.04; letter-spacing: -0.01em; }
+h2 { font-weight: 800; font-size: clamp(30px, 3.6vw, 42px); line-height: 1.1; }
+a { color: var(--pink); }
+a:hover { color: var(--pink-dark); }
+a:focus-visible, button:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
+.on-dark a:focus-visible { outline-color: var(--white); }
+
+.wrap { max-width: 1120px; margin: 0 auto; padding-left: 24px; padding-right: 24px; }
+.section { padding-top: 80px; padding-bottom: 80px; }
+.section-wash { background: var(--wash); }
+.stack { display: flex; flex-direction: column; gap: 32px; }
+.lead { color: var(--body); }
+.small { font-size: 15px; color: var(--body); }
+
+/* Buttons */
+.btn { display: inline-block; text-decoration: none; font-weight: 700; padding: 15px 28px; border-radius: 999px; text-align: center; border: 2px solid transparent; }
+.btn-primary { background: var(--pink); color: var(--white); }
+.btn-primary:hover { background: var(--pink-dark); color: var(--white); }
+.btn-outline { background: var(--white); color: var(--ink); border-color: var(--ink); }
+.btn-outline:hover { background: var(--ink); color: var(--white); }
+.btn-light { background: var(--white); color: var(--plum); }
+.btn-light:hover { background: var(--plum-soft); color: var(--plum); }
+.btn-small { padding: 12px 20px; }
+.btn-block { display: block; }
+
+/* Banner and header */
+.banner { background: var(--pink); color: var(--white); text-align: center; padding: 11px 24px; font-weight: 700; font-size: 15px; }
+.site-header { border-bottom: 1px solid var(--line); }
+.header-row { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; padding-top: 16px; padding-bottom: 16px; }
+.brand { font-family: var(--display); font-weight: 800; font-size: 22px; letter-spacing: 0.02em; color: var(--ink); text-decoration: none; }
+.nav { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; font-size: 15px; font-weight: 500; }
+.nav a { color: var(--ink); text-decoration: none; }
+.nav a:hover { color: var(--pink); }
+.nav .btn { color: var(--white); }
+.lang { color: var(--muted); }
+.lang a { color: var(--muted); }
+
+/* Hero */
+.hero { display: flex; flex-wrap: wrap; align-items: center; gap: 48px; padding-top: 56px; padding-bottom: 72px; }
+.hero-photo, .hero-text { flex: 1 1 320px; }
+.hero-text { display: flex; flex-direction: column; gap: 20px; }
+.hero-text .lead { font-size: 19px; }
+.hero-offer { font-weight: 700; font-size: 19px; color: var(--pink); }
+.btn-row { display: flex; flex-wrap: wrap; gap: 12px; }
+.chips { display: flex; flex-wrap: wrap; gap: 10px; padding: 0; margin: 8px 0 0; list-style: none; font-size: 14px; font-weight: 500; }
+.chips li { background: #F5EFF3; padding: 7px 14px; border-radius: 999px; }
+
+/* Photo placeholders: replace each <div class="photo ..."> with an <img> */
+.photo { background: var(--pink-tint); border: 2px dashed #E3A9C1; border-radius: 24px; display: flex; align-items: center; justify-content: center; color: #7A2A4C; font-weight: 500; text-align: center; padding: 24px; }
+.photo-hero { min-height: 440px; }
+.photo-card { height: 180px; border-radius: 16px; font-size: 14px; }
+.photo-about { flex: 0 1 320px; height: 340px; }
+img.photo { padding: 0; border: none; object-fit: cover; width: 100%; }
+img.photo-hero { min-width: 0; min-height: 0; height: auto; align-self: center; } /* show the whole photo, logos included */
+
+/* How it works */
+.paths { display: flex; flex-wrap: wrap; gap: 24px; }
+.path { flex: 1 1 300px; background: var(--white); border: 1px solid var(--line); border-radius: 20px; padding: 32px; display: flex; flex-direction: column; gap: 20px; }
+.path-pass { border: 2px solid var(--pink); }
+.card-title { font-weight: 700; font-size: 24px; line-height: 1.2; }
+.steps { list-style: none; counter-reset: step; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 20px; }
+.steps li { counter-increment: step; position: relative; padding-left: 46px; min-height: 32px; padding-top: 3px; }
+.steps li::before { content: counter(step); position: absolute; left: 0; top: 0; width: 32px; height: 32px; border-radius: 50%; background: var(--ink); color: var(--white); font-weight: 700; font-size: 15px; display: flex; align-items: center; justify-content: center; }
+.path-pass .steps li::before { background: var(--pink); }
+.note { background: var(--pink-tint); color: var(--pink-tint-text); border-radius: 12px; padding: 12px 16px; font-size: 15px; }
+.note-large { border-radius: 16px; padding: 20px 24px; font-size: 17px; }
+
+/* Intro offer */
+.offer { background: var(--plum); color: var(--white); border-radius: 28px; padding: 48px; display: flex; flex-wrap: wrap; align-items: center; gap: 40px; }
+.offer-text { flex: 1 1 320px; display: flex; flex-direction: column; gap: 14px; }
+.offer-text .lead { color: var(--plum-soft); font-size: 18px; }
+.offer-terms { color: #CDBBD6; font-size: 15px; }
+.offer-side { flex: 0 1 260px; display: flex; flex-direction: column; align-items: flex-start; gap: 16px; }
+.offer-price { font-family: var(--display); font-weight: 800; font-size: 84px; line-height: 1; color: var(--plum-accent); }
+.tag-label { font-size: 14px; font-weight: 700; color: var(--plum-accent); }
+
+/* Schedule */
+.days { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; align-items: start; }
+.day { background: var(--white); border: 1px solid var(--line); border-radius: 20px; padding: 24px; display: flex; flex-direction: column; gap: 16px; }
+.day-head { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; }
+.day-name { font-weight: 700; font-size: 24px; }
+.pill { font-size: 13px; font-weight: 700; padding: 4px 12px; border-radius: 999px; }
+.pill-griff { background: var(--plum); color: var(--white); }
+.pill-stl { background: var(--amber); color: var(--amber-text); }
+.slots { list-style: none; padding: 0; margin: 0; }
+.slots li { display: flex; gap: 12px; border-top: 1px solid var(--line); padding: 12px 0; }
+.slots li:last-child { padding-bottom: 0; }
+.slots time, .slots .time { flex: none; width: 76px; font-weight: 700; }
+.slots small { color: var(--muted); font-size: 14px; }
+.cta-row { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; }
+
+/* Classes */
+.classes { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; align-items: start; }
+.class { display: flex; flex-direction: column; gap: 12px; }
+.class h3 { font-family: var(--display); font-weight: 700; font-size: 20px; }
+.class p { font-size: 15px; color: var(--body); }
+
+/* Prices */
+.prices { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 16px; }
+.price { background: var(--white); border: 1px solid var(--line); border-radius: 20px; padding: 24px; display: flex; flex-direction: column; gap: 10px; }
+.price h3 { font-size: 18px; font-weight: 700; }
+.price-kind { font-size: 14px; font-weight: 700; color: var(--muted); }
+.price-amount { font-family: var(--display); font-weight: 800; font-size: 44px; line-height: 1; }
+.price-per { font-weight: 700; color: var(--pink); }
+.price-valid { font-size: 14px; color: var(--muted); flex-grow: 1; }
+.price-intro { background: var(--plum); color: var(--white); border-color: var(--plum); }
+.price-intro .price-kind, .price-intro .price-per { color: var(--plum-accent); }
+.price-intro .price-valid { color: #CDBBD6; }
+.price-dropin .price-per { color: var(--body); }
+
+/* Studios */
+.studios { display: flex; flex-wrap: wrap; gap: 24px; }
+.studio { flex: 1 1 300px; border: 1px solid var(--line); border-radius: 20px; padding: 32px; display: flex; flex-direction: column; align-items: flex-start; gap: 10px; }
+.studio-name { font-weight: 700; font-size: 26px; }
+.studio address { font-style: normal; font-weight: 500; }
+
+/* About */
+.about { display: flex; flex-wrap: wrap; align-items: center; gap: 48px; }
+.about-text { flex: 1 1 320px; display: flex; flex-direction: column; gap: 16px; }
+
+/* FAQ */
+.faq { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; align-items: start; }
+.faq-item { border: 1px solid var(--line); border-radius: 16px; padding: 24px; display: flex; flex-direction: column; gap: 8px; }
+.faq-item h3 { font-size: 18px; font-weight: 700; }
+.faq-item p { font-size: 15px; color: var(--body); }
+
+/* Contact and footer */
+.contact { background: var(--plum); color: var(--white); }
+.contact-row { display: flex; flex-wrap: wrap; align-items: center; gap: 32px 48px; }
+.contact-text { flex: 1 1 320px; display: flex; flex-direction: column; gap: 16px; }
+.contact-text p { color: var(--plum-soft); }
+.contact-text strong { color: var(--white); }
+.contact-actions { flex: 0 1 300px; display: flex; flex-direction: column; gap: 12px; }
+.btn-ghost { background: transparent; color: var(--white); border-color: var(--white); }
+.btn-ghost:hover { background: var(--white); color: var(--plum); }
+.site-footer { padding: 28px 24px; text-align: center; font-size: 14px; color: var(--muted); }
+
+@media (max-width: 600px) {
+  .section { padding-top: 56px; padding-bottom: 56px; }
+  .offer { padding: 32px 24px; }
+  .path, .studio { padding: 24px; }
+  .photo-hero { min-height: 300px; }
+  .offer-price { font-size: 64px; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
