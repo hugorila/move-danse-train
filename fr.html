@@ -10,14 +10,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&amp;family=DM+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
-<!--
-  BEFORE PUBLISHING
-  1. Search and replace BOOKING_LINK with the Square booking page address.
-  2. Search and replace PASS_LINK with the Square page where passes are sold.
-  3. Replace the text in [brackets] (pass validity, footwear, phone number).
-  4. Swap each <div class="photo ..."> for a real image, for example:
-     <img class="photo photo-hero" src="images/hero.jpg" alt="Manoella teaching a class">
--->
 </head>
 <body>
 
@@ -25,12 +17,11 @@
 
 <header class="site-header">
   <div class="wrap header-row">
-    <a class="brand" href="#top">MOVE DANSE TRAIN</a>
+    <a class="brand" href="#top">Cours avec Manoella Cavalcanti</a>
     <nav class="nav" aria-label="Principal">
       <a href="#schedule">Horaire</a>
       <a href="#classes">Cours</a>
       <a href="#prices">Tarifs</a>
-      <a href="#studios">Studios</a>
       <a href="#contact">Contact</a>
       <span class="lang"><a href="index.html" lang="en">EN</a> / <strong>FR</strong></span>
       <a class="btn btn-primary btn-small" href="https://manoella-cavalcanti.square.site/s/appointments">Réserver un cours</a>
@@ -67,7 +58,7 @@
           <h3 class="card-title">Vous venez pour un seul cours?</h3>
           <ol class="steps">
             <li>Appuyez sur <strong>Réserver un cours</strong> et choisissez votre studio.</li>
-            <li>Choisissez votre cours et payez 25 $ au moment de réserver. C’est tout!</li>
+            <li>Choisissez votre cours et payez au moment de réserver. Nouveau ou nouvelle? Utilisez le code FIRSTCLASS pour un cours gratuit (utilisation unique). C’est tout!</li>
           </ol>
         </div>
         <div class="path path-pass">
@@ -77,7 +68,7 @@
             <li>Appuyez sur <strong>Réserver un cours</strong> et choisissez votre cours.</li>
             <li>À l’étape du paiement, appuyez sur <strong>Sign in</strong> (en haut à droite) avec <strong>le même numéro de téléphone utilisé pour acheter votre forfait</strong>. Votre forfait s’applique automatiquement, sans carte de crédit.</li>
           </ol>
-          <p class="note">Votre forfait n’apparaît pas? Écrivez-moi par texto et je vous inscris tout de suite.</p>
+          <p class="note">Votre forfait n’apparaît pas? Écrivez-moi et je vous inscris tout de suite.</p>
         </div>
       </div>
     </div>
@@ -90,11 +81,11 @@
           <span class="tag-label">Offre découverte</span>
           <h2>Vos 3 premiers cours pour 33 $</h2>
           <p class="lead">Pas certain·e du cours qui vous convient? Essayez-en trois différents. C’est 11 $ par cours, aucune expérience requise.</p>
-          <p class="offer-terms">Valide [X semaines] à partir de l’achat. Pour les nouveaux clients seulement, une fois par personne.</p>
+          <p class="offer-terms">Valide 4 semaines à partir de l’achat. Pour les nouveaux clients seulement, une fois par personne.</p>
         </div>
         <div class="offer-side">
           <div class="offer-price">33 $</div>
-          <a class="btn btn-light" href="PASS_LINK">Profiter de l’offre</a>
+          <a class="btn btn-light" href="https://square.link/u/cho5relB">Profiter de l’offre</a>
         </div>
       </div>
     </div>
@@ -110,7 +101,6 @@
         <div class="day">
           <div class="day-head"><h3 class="day-name">Mardi</h3><span class="pill pill-griff">Griffintown</span></div>
           <ul class="slots">
-            <li><span class="time">17 h</span><span>Zumba Cardio Danse</span></li>
             <li><span class="time">18 h</span><span>Mobilité/Étirements</span></li>
             <li><span class="time">19 h</span><span>Ballet Fitness</span></li>
             <li><span class="time">20 h</span><span>Jazz Funk</span></li>
@@ -119,7 +109,7 @@
         <div class="day">
           <div class="day-head"><h3 class="day-name">Mercredi</h3><span class="pill pill-griff">Griffintown</span></div>
           <ul class="slots">
-            <li><span class="time">18 h</span><span>Zumba Cardio Danse</span></li>
+            <li><span class="time">18 h</span><span>Zumba</span></li>
             <li><span class="time">19 h</span><span>Mobilité/Étirements</span></li>
             <li><span class="time">20 h</span><span>Technique de danse <small>(lyrique, contemporain, ballet, jazz)</small></span></li>
           </ul>
@@ -128,13 +118,13 @@
           <div class="day-head"><h3 class="day-name">Vendredi</h3><span class="pill pill-stl">Saint-Laurent</span></div>
           <ul class="slots">
             <li><span class="time">11 h</span><span>Mobilité/Étirements</span></li>
-            <li><span class="time">19 h 15</span><span>Zumba Cardio Danse</span></li>
+            <li><span class="time">19 h 15</span><span>Zumba</span></li>
           </ul>
         </div>
         <div class="day">
           <div class="day-head"><h3 class="day-name">Dimanche</h3><span class="pill pill-griff">Griffintown</span></div>
           <ul class="slots">
-            <li><span class="time">11 h</span><span>Zumba Cardio Danse</span></li>
+            <li><span class="time">11 h</span><span>Zumba</span></li>
             <li><span class="time">12 h</span><span>Mobilité/Étirements</span></li>
             <li><span class="time">13 h</span><span>Ballet Fitness</span></li>
           </ul>
@@ -144,6 +134,7 @@
         <a class="btn btn-primary" href="https://manoella-cavalcanti.square.site/s/appointments">Réserver un cours</a>
         <span class="lead">Voyez les places disponibles et réservez en ligne.</span>
       </div>
+      <p class="cta-note">Pour réserver, il faut un compte avec un forfait actif, ou une carte de crédit pour un cours à l’unité.</p>
     </div>
   </section>
 
@@ -151,11 +142,13 @@
     <div class="wrap stack">
       <h2>Trouvez votre cours</h2>
       <div class="classes">
-        <div class="class"><div class="photo photo-card">[Photo]</div><h3>Zumba Cardio Danse</h3><p>Quand la fête rencontre l’entraînement! Des chorégraphies faciles sur les succès du moment, du renforcement musculaire et des étirements pour finir. Amusant, intense et accessible à tous.</p></div>
-        <div class="class"><div class="photo photo-card">[Photo]</div><h3>Ballet Fitness</h3><p>Un entraînement inspiré du ballet pour la posture, la force et la grâce. Exercices à la barre et au centre, en musique. Aucune expérience en ballet requise.</p></div>
-        <div class="class"><div class="photo photo-card">[Photo]</div><h3>Mobilité/Étirements</h3><p>Un cours plus doux pour délier les hanches, le dos et les épaules, gagner en souplesse et bouger plus librement. Idéal seul ou après un cours cardio.</p></div>
-        <div class="class"><div class="photo photo-card">[Photo]</div><h3>Jazz Funk</h3><p>Des chorégraphies de style commercial, avec de l’attitude! Apprenez une routine sur de la musique pop et hip-hop et gagnez en confiance sur scène.</p></div>
-        <div class="class"><div class="photo photo-card">[Photo]</div><h3>Technique de danse</h3><p>Technique lyrique, contemporaine, ballet et jazz : pirouettes, sauts, lignes et musicalité. Pour les danseurs qui veulent progresser, du débutant à l’avancé.</p></div>
+        <div class="class"><img class="photo photo-card" src="images/zumba-cover.jpg" alt="Cours de Zumba" width="800" height="600"><h3>Zumba</h3><p>La Zumba est un entraînement de danse amusant et énergique qui combine des musiques latines et internationales avec des chorégraphies faciles à suivre. Elle s’adresse à tout le monde : aucune expérience en danse n’est requise, et vous pouvez y aller à votre rythme. Chaque cours est une séance de cardio complète qui améliore l’endurance, la coordination et l’humeur, tout en ressemblant plus à une fête qu’à un entraînement.</p></div>
+        <div class="class"><img class="photo photo-card" src="images/ballet-fitness-cover.jpg" alt="Cours de Ballet Fitness" width="800" height="600"><h3>Ballet Fitness</h3><p>Le Ballet Fitness est un circuit intense pour tout le corps qui combine exercices aérobiques et anaérobiques pour stimuler votre métabolisme, développer une musculature élancée, et sculpter et tonifier l’ensemble du corps. Intensité et élégance vont de pair.
+          Inspirée du ballet classique, cette méthode allie résistance, rythme et mouvement continu pour créer un entraînement qui brûle beaucoup de calories tout en renforçant vos muscles et en améliorant votre posture. Chaque cours est conçu pour sculpter et raffiner chaque détail de votre silhouette. C’est accessible, efficace et transformateur.</p></div>
+        <div class="class"><img class="photo photo-card" src="images/mobility-cover.jpg" alt="Cours de Mobilité/Étirements" width="800" height="600"><h3>Mobilité/Étirements</h3><p>Un cours de mouvement axé sur la souplesse, la mobilité, l’amplitude de mouvement active et la conscience corporelle. Vous enchaînerez des exercices doux et actifs conçus pour vous aider à bouger plus librement, à gagner en souplesse et à développer force et contrôle dans toute votre amplitude de mouvement. Convient à tous les niveaux.</p></div>
+        <div class="class"><img class="photo photo-card" src="images/jazz-funk-cover.JPG" alt="Cours de Jazz Funk" width="800" height="600"><h3>Jazz Funk</h3><p>Le Jazz Funk est un cours de danse plein d’énergie qui marie la technique du jazz au groove et à l’attitude du hip-hop et du funk. C’est audacieux, ludique et puissant, et c’est l’une des façons les plus amusantes de bouger.
+          Chaque cours commence par un échauffement, suivi des bases du jazz et du hip-hop, comme les isolations, les grooves et des mouvements nets et affirmés. Ensuite, on apprend une chorégraphie sur des succès actuels et des classiques : vous repartez avec une nouvelle routine et un grand sourire.</p></div>
+        <div class="class"><img class="photo photo-card" src="images/dance-technique-cover.jpg" alt="Cours de Technique de danse" width="800" height="600"><h3>Technique de danse</h3><p>Vous avez toujours voulu danser, ou vous êtes prêt·e à y revenir? Ce programme a été créé pour les adultes qui veulent bâtir une vraie technique dans un environnement accueillant et bienveillant. Chaque cours réunit quatre styles en une expérience complète : jazz, contemporain, lyrique et ballet classique. Que vous soyez tout à fait débutant·e ou que vous souhaitiez renforcer et peaufiner vos bases, vous progresserez à votre rythme grâce à des consignes claires et à des corrections individuelles. Aucune expérience n’est requise et il n’y a aucune pression d’être parfait·e. Venez comme vous êtes et savourez le plaisir de danser.</p></div>
       </div>
     </div>
   </section>
@@ -169,8 +162,8 @@
           <h3>Offre découverte : 3 cours</h3>
           <div class="price-amount">33 $</div>
           <div class="price-per">11 $ par cours</div>
-          <div class="price-valid">Valide [X semaines]</div>
-          <a class="btn btn-light btn-small btn-block" href="PASS_LINK">Profiter de l’offre</a>
+          <div class="price-valid">Valide 4 semaines</div>
+          <a class="btn btn-light btn-small btn-block" href="https://square.link/u/cho5relB">Profiter de l’offre</a>
         </div>
         <div class="price price-dropin">
           <span class="price-kind">À l’unité</span>
@@ -186,54 +179,33 @@
           <div class="price-amount">92 $</div>
           <div class="price-per">23 $ par cours</div>
           <div class="price-valid">Valide 1 mois</div>
-          <a class="btn btn-primary btn-small btn-block" href="PASS_LINK">Acheter</a>
+          <a class="btn btn-primary btn-small btn-block" href="https://square.link/u/0PSwvcNI">Acheter</a>
         </div>
         <div class="price">
           <span class="price-kind">Forfait</span>
           <h3>8 cours</h3>
           <div class="price-amount">165 $</div>
           <div class="price-per">20,63 $ par cours</div>
-          <div class="price-valid">Valide [X mois]</div>
-          <a class="btn btn-primary btn-small btn-block" href="PASS_LINK">Acheter</a>
+          <div class="price-valid">Valide 3 mois</div>
+          <a class="btn btn-primary btn-small btn-block" href="https://square.link/u/7ab5TYOT">Acheter</a>
         </div>
         <div class="price">
           <span class="price-kind">Forfait</span>
           <h3>12 cours</h3>
           <div class="price-amount">219 $</div>
           <div class="price-per">18,25 $ par cours</div>
-          <div class="price-valid">Valide [X mois]</div>
-          <a class="btn btn-primary btn-small btn-block" href="PASS_LINK">Acheter</a>
+          <div class="price-valid">Valide 3 mois</div>
+          <a class="btn btn-primary btn-small btn-block" href="https://square.link/u/suVvwgWk">Acheter</a>
         </div>
       </div>
       <p class="small">Les forfaits sont valides pour tous les cours de 50 minutes, dans les deux studios. Ils n’incluent pas les ateliers ni les cours privés, et sont réservés à l’acheteur.</p>
-      <p class="note note-large"><strong>Comment utiliser votre forfait :</strong> Au moment de réserver, appuyez sur <strong>Sign in</strong> à l’étape du paiement avec le même numéro de téléphone utilisé pour acheter votre forfait. Il s’appliquera automatiquement. S’il n’apparaît pas, écrivez-moi par texto et je vous inscris.</p>
-    </div>
-  </section>
-
-  <section id="studios" class="section">
-    <div class="wrap stack">
-      <h2>Où me trouver</h2>
-      <div class="studios">
-        <div class="studio">
-          <span class="pill pill-griff">Mardi, mercredi, dimanche</span>
-          <h3 class="studio-name">Griffintown</h3>
-          <p class="lead">chez Belle Forme Brésil</p>
-          <address>660, rue Bridge, Montréal QC H3K 3K9</address>
-        </div>
-        <div class="studio">
-          <span class="pill pill-stl">Vendredi</span>
-          <h3 class="studio-name">Saint-Laurent</h3>
-          <p class="lead">chez Beforme Pilates</p>
-          <address>819, boul. Décarie, Montréal QC H4L 3L7</address>
-        </div>
-      </div>
-      <p class="small">Au moment de réserver, choisissez d’abord votre studio. Vous pouvez changer avec <strong>Change location</strong>.</p>
+      <p class="note note-large"><strong>Comment utiliser votre forfait :</strong> Au moment de réserver, appuyez sur <strong>Sign in</strong> à l’étape du paiement avec le même numéro de téléphone utilisé pour acheter votre forfait. Il s’appliquera automatiquement. S’il n’apparaît pas, écrivez-moi et je vous inscris.</p>
     </div>
   </section>
 
   <section class="section section-wash">
     <div class="wrap about">
-      <div class="photo photo-about">[Photo de Manoella]</div>
+      <img class="photo photo-about" src="images/manoella-profile-picture.jpg" alt="Manoella, professeure de danse" width="800" height="800">
       <div class="about-text">
         <h2>Votre professeure</h2>
         <p>Bonjour, je m’appelle Manoella! J’enseigne la danse depuis plus de 15 ans, au Brésil, aux Émirats arabes unis et au Canada. Je suis professeure de ballet certifiée CDTA, professeure certifiée PBT, instructrice Zumba et instructrice Ballet Fitness certifiée.</p>
@@ -249,8 +221,8 @@
         <div class="faq-item"><h3>J’ai acheté un forfait. Comment réserver?</h3><p>Appuyez sur <strong>Réserver un cours</strong>, choisissez votre cours, puis appuyez sur <strong>Sign in</strong> à l’étape du paiement avec le même numéro de téléphone que pour votre forfait. Aucune carte requise.</p></div>
         <div class="faq-item"><h3>Pourquoi la page de réservation affiche 25 $?</h3><p>C’est le prix à l’unité. Si vous vous connectez et avez un forfait, il s’applique automatiquement et vous payez 0 $.</p></div>
         <div class="faq-item"><h3>Je n’ai jamais dansé. Puis-je venir?</h3><p>Oui! Tous les cours sont ouverts à tous les niveaux. Zumba, Ballet Fitness et Mobilité/Étirements sont parfaits pour commencer.</p></div>
-        <div class="faq-item"><h3>Quoi porter et apporter?</h3><p>Des vêtements confortables et une bouteille d’eau. [Chaussures selon le cours]</p></div>
-        <div class="faq-item"><h3>Puis-je annuler?</h3><p>Oui. Veuillez annuler avant le début du cours, avec le lien dans votre courriel de confirmation.</p></div>
+        <div class="faq-item"><h3>Quoi porter et apporter?</h3><p>Portez des vêtements confortables qui vous permettent de bouger librement. Pour la Zumba et le Jazz Funk, nous recommandons des espadrilles ou d’autres chaussures de sport confortables. Pour les cours de technique de danse, nous recommandons des chaussettes de danse, des chaussons de ballet ou des chaussures de jazz. Pour le Ballet Fitness et Mobilité/Étirements, nous recommandons des chaussettes antidérapantes, des chaussons de ballet ou les pieds nus.</p></div>
+        <div class="faq-item"><h3>Puis-je annuler?</h3><p>Oui. Vous pouvez annuler jusqu’à 24 heures avant le début de votre cours, avec le lien dans votre courriel de confirmation. Les annulations faites moins de 24 heures avant le cours pourraient ne pas donner droit à un remboursement ou à un crédit.</p></div>
         <div class="faq-item"><h3>Quel studio choisir?</h3><p>Griffintown : mardi, mercredi et dimanche. Saint-Laurent : vendredi.</p></div>
       </div>
     </div>
@@ -260,11 +232,9 @@
     <div class="wrap contact-row">
       <div class="contact-text">
         <h2>Des questions? Ça me fera plaisir de vous aider.</h2>
-        <p>Écrivez-moi par texto au <strong>[VOTRE NUMÉRO]</strong> ou sur Instagram <strong>@manoc</strong>. Je réponds habituellement en moins d’une journée.</p>
+        <p>Écrivez-moi à <strong>movedansetrain@gmail.com</strong> ou trouvez-moi sur Instagram <strong>@manoc</strong></p>
       </div>
       <div class="contact-actions">
-        <!-- Replace 15145550000 with the real number, digits only -->
-        <a class="btn btn-light" href="sms:+15145550000">M’écrire par texto</a>
         <a class="btn btn-ghost" href="https://www.instagram.com/manoc/">Instagram @manoc</a>
       </div>
     </div>
@@ -272,7 +242,7 @@
 
 </main>
 
-<footer class="site-footer">MOVE DANSE TRAIN, Griffintown &amp; Saint-Laurent, Montréal</footer>
+<footer class="site-footer">MOVE DANSE TRAIN avec Manoella Cavalcanti</footer>
 
 </body>
 </html>
