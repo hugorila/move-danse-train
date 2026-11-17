@@ -52,6 +52,11 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--ink); outline-o
 .btn-outline:hover { background: var(--purple); color: var(--white); border-color: var(--purple); }
 .btn-light { background: var(--yellow); color: var(--ink); }
 .btn-light:hover { background: var(--purple); color: var(--white); }
+/* Studio booking buttons: same colours as the studio labels in the schedule */
+.btn-griff { background: var(--purple); color: var(--white); }
+.btn-griff:hover { background: var(--plum); color: var(--white); }
+.btn-stl { background: var(--amber); color: var(--amber-text); }
+.btn-stl:hover { background: var(--yellow); color: var(--ink); }
 .btn-small { padding: 12px 20px; }
 .btn-block { display: block; }
 
@@ -64,6 +69,9 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--ink); outline-o
 .nav a { color: var(--ink); text-decoration: none; }
 .nav a:hover { color: var(--body); }
 .nav .btn { color: var(--white); }
+.nav .btn-griff:hover { color: var(--white); }
+.nav .btn-stl { color: var(--amber-text); }
+.nav .btn-stl:hover { color: var(--ink); }
 .lang { color: var(--muted); }
 .lang a { color: var(--muted); }
 
@@ -120,6 +128,7 @@ img.photo-hero { min-width: 0; min-height: 0; height: auto; align-self: center; 
 .slots li:last-child { padding-bottom: 0; }
 .slots time, .slots .time { flex: none; width: 76px; font-weight: 700; }
 .slots small { color: var(--muted); font-size: 14px; }
+.day .btn { padding: 12px 8px; font-size: 14px; white-space: nowrap; } /* booking button under each day */
 .cta-row { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; }
 .cta-note {
   margin-top: 0.5rem;
